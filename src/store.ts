@@ -8,13 +8,15 @@ interface TodoItem{
 
 export class TodoStoreImpl{
     todos:TodoItem[] = [];
-    value:string="";
+    value:string = "";
 
     constructor(){
         makeObservable(this,{
             todos:observable,
+            value:observable,
             addTodo:action,
             toggleTodo:action,
+            setValue:action,
             status:computed
             
         })

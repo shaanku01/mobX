@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './App.css';
+
 import { HomePage } from './pages';
 import { TodoStore } from './store';
 function App() {
